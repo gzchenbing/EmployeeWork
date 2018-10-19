@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp" 
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:orientation="vertical" >
+		<RelativeLayout 
+	        android:layout_width="5dp"
+	        android:layout_height="5dp"/>
+	    <TextView
+	        android:id="@+id/appoint_repairno"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="维修编号：20180601125806231"
+	        android:textColor="#4D4D4D"
+	        android:textSize="15sp" />
+	    <RelativeLayout 
+	        android:layout_width="5dp"
+	        android:layout_height="5dp"/>
+	    <TextView
+	        android:id="@+id/appoint_time"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="发布时间：2018-06-02 14:21:23"
+	        android:textColor="#4D4D4D"
+	        android:textSize="15sp" />
+		<RelativeLayout 
+	        android:layout_width="5dp"
+	        android:layout_height="5dp"/>
+	    <TextView
+	        android:id="@+id/appoint_exTypeName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="问题类型：覆盖"
+	        android:textColor="#4D4D4D"
+	        android:textSize="15sp" />
+		<RelativeLayout 
+	        android:layout_width="5dp"
+	        android:layout_height="5dp"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="140dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+
+        <TextView
+            android:id="@+id/appoint_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="待接收"
+            android:textColor="@color/dark_red" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

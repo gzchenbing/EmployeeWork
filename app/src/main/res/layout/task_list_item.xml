@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/task_list_item"
+    android:layout_width="wrap_content"
+    android:layout_height="24dp"
+    android:textSize="15sp"
+    android:text="林溪路、景明北路、云大西路（巡视）">
+    
+
+</TextView>

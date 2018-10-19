@@ -1,0 +1,39 @@
+<!-- 用于辅助实现SmoothCheckBox和MonIndicator两个自定义样式属性 -->
+<!-- 自定义属性https://blog.csdn.net/liu_xi_xin/article/details/54934545
+    https://blog.csdn.net/u013647382/article/details/51336712 -->
+<resources>
+    <declare-styleable name="SmoothCheckBox">
+        <attr name="duration" format="integer"/>
+        <attr name="stroke_width" format="dimension"/>
+        <attr name="color_tick" format="color"/>
+        <attr name="color_checked" format="color"/>
+        <attr name="color_unchecked" format="color"/>
+        <attr name="color_unchecked_stroke" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="monindicator">
+        <attr name="circleRadius" format="dimension" />
+        <attr name="circleSpacing" format="dimension" />
+        <attr name="cycle" format="integer" />
+    </declare-styleable>
+    
+    
+    <!-- 自定义进度条属性 -->
+    <attr name="reachedColor" format="color" />
+    <attr name="unreachedColor" format="color" />
+    <declare-styleable name="SimpleProgressbar">
+        <attr name="reachedColor" />
+        <attr name="unreachedColor" />
+    </declare-styleable>
+    
+    <!-- 用于高精度大图展示 -->
+    <declare-styleable name="IntensifyImageView">
+        <attr name="scaleType" format="enum">
+            <enum name="fitAuto" value="1" />
+            <enum name="fitCenter" value="2" />
+        </attr>
+        <attr name="animateScaleType" format="boolean" />
+        <attr name="maximumScale" format="float" />
+        <attr name="minimumScale" format="float" />
+        <attr name="scale" format="float" />
+    </declare-styleable>
+</resources>

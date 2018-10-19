@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="260dp"
+    android:layout_height="152sp" 
+    android:background="@drawable/border">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/driver"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textSize="18sp"
+                android:textColor="#4D4D4D"
+                android:text="机动车导航（本地）" />
+
+        </RelativeLayout>
+		<LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_dark"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/ride"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textSize="18sp"
+                android:textColor="#4D4D4D"
+                android:text="电动车导航（本地）" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_dark"
+            android:orientation="vertical" >
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/gd_minimap"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textSize="18sp"
+                android:textColor="#4D4D4D"
+                android:text="高德地图" />
+
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+</RelativeLayout>

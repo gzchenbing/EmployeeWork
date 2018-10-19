@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 蓝色按钮点击背景变化 -->
+<item android:state_pressed="false" android:drawable="@drawable/btn_blue_normal"></item>
+     <item android:state_pressed="true" android:drawable="@drawable/btn_blue_recording"></item>
+</selector>

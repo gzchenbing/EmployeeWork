@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">工作平台</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="name_hint">用户名</string>
+    <string name="pwd_hint">密 	   码</string>
+    <string name="login_sure">登		录</string>
+    <string name="cancel">取		消</string>
+    <string name="remenber_pwd">是否记住密码?</string>
+    <string name="loading_text">正在登录</string>
+    <string name="version_text">版本号:1.0</string>
+    <string name="sign">巡检</string>
+    <string name="exception">问题</string>
+    <string name="repair">维修</string>
+    <string name="monitor">监测</string>
+    <string name="help">帮助</string>
+    <string name="sign_task_str">任务</string>
+    <string name="sign_title_str">巡 检</string>
+    <string name="repair_title_str">维 修</string>
+    <string name="other_appoint_str">他人指派任务</string>
+    <string name="oneself_appoint_str">自行指派任务</string>
+    <string name="question_title_str">问 题</string>
+    <string name="monitor_title_str">监 测</string>
+    <string name="help_title_str">帮 助</string>
+    <string name="sure_sign">确认签到</string>
+	<string name="already_sign">已经签到</string>
+	<string name="str_recorder_normal">按住说话</string>
+	
+
+	
+
+</resources>

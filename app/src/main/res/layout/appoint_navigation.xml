@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <!-- 设置标题 -->
+    <include layout="@layout/titlebar" />
+    
+        <!-- 引入高德地图 -->
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/appoint_navigation_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+    </com.amap.api.maps.MapView>
+
+</LinearLayout>

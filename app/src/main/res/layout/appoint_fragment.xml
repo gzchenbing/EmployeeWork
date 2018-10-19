@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:background="@color/repair_roll_tile"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/appoint_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="正在加载..." />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/appoint_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="#000000"
+        android:dividerHeight="2px"
+        android:drawSelectorOnTop="true"
+        android:scrollbars="vertical" />
+
+</LinearLayout>

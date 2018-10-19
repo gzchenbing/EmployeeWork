@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" >
+
+    <!-- 标题栏样式 -->
+
+    <RelativeLayout
+        android:id="@+id/sign_fragment_title"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/bottom_tabs_press" >
+
+        <RelativeLayout
+            android:id="@+id/sign_task"
+            android:background="@drawable/sign_button_operate"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sign_task_img" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/sign_title_str"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/sign_task_content"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/sign_button_operate"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/sign_task_content" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 引入高德地图 -->
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/sign_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sign_fragment_title" >
+    </com.amap.api.maps.MapView>
+
+    <RelativeLayout
+        android:id="@+id/sign_progressbar_Layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_fragment_title"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/help_grid_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="任务进度：" />
+
+
+        <com.kmnfsw.work.sign.view.SimpleProgressbar
+            android:id="@+id/sign_progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/help_grid_text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="70dp" />
+
+        <TextView
+            android:id="@+id/sign_progressbar_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sign_progressbar"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="124dp"
+            android:text="50.0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/sign_progressbar_value"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="27dp"
+            android:text="%" />
+    </RelativeLayout>
+
+</RelativeLayout>

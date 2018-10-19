@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kmnfsw.work"
+    android:versionCode="1"
+    android:versionName="1.0.6" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <!-- 显示顶层浮窗 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 响铃与震动的权限 -->
+ 	<uses-permission android:name="android.permission.VIBRATE"/>
+    <!-- 开机启动事件 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- 录音权限 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 读写存储卡权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 允许程序打开网络套接字 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 安装/卸载快捷方式 -->
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 用于获取运营商信息，用于支持提供运营商信息相关的接口 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于进行网络定位 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于访问GPS定位 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- 电源锁，用于唤醒CPU -->
+	<uses-permission android:name="android.permission.WAKE_LOCK"/>
+	<!--允许程序改变网络连接状态 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <!--读取联系人权限，上传联系人需要用到此权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!--配置权限，用来记录应用配置信息 -->
+	<!--<uses-permission android:name="android.permission.WRITE_SETTINGS" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <!-- 高德密匙引入 -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4d4e84a276edc32a7902964feabbbba6" />
+
+        <activity
+            android:name="com.kmnfsw.work.MainActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- com.kmnfsw.work.version.SplashActivity -->
+        <activity
+            android:name="com.kmnfsw.work.welcomeLogin.WelcomeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kmnfsw.work.version.SplashActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kmnfsw.work.welcomeLogin.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kmnfsw.work.sign.SignTaskActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kmnfsw.work.question.QuestionShowBigImgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 高德导航组件 -->
+        <activity android:name="com.amap.api.navi.AmapRouteActivity"
+              android:theme="@android:style/Theme.NoTitleBar"
+              android:configChanges="orientation|keyboardHidden|screenSize" />
+        <activity
+            android:name="com.kmnfsw.work.repair.ShowBigImgActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kmnfsw.work.repair.AppointApplyActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.kmnfsw.work.repair.AppointDetailsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+        <!-- 时时后台线程 -->
+        <!--
+        <service
+            android:name="com.kmnfsw.work.backstage.service.KeepLiveService"
+            android:permission="android.permission.BIND_JOB_SERVICE" > 注册Android防杀进程
+        </service>
+        -->
+
+
+        <!-- 注册jobService时时定位服务 -->
+        <!-- <service
+            android:name="com.kmnfsw.work.backstage.LocalhostReportService1"
+            android:permission="android.permission.BIND_JOB_SERVICE" /> -->
+        <service android:name="com.amap.api.location.APSService" android:launchMode="singleInstance"/>
+        <service android:name="com.kmnfsw.work.backstage.LocalhostReportService" />
+        
+        <!-- 登录服务 -->
+        <service android:name="com.kmnfsw.work.welcomeLogin.service.LoginService" />
+        
+        <!-- 签到服务 -->
+        <service android:name="com.kmnfsw.work.sign.service.SignTaskService" />
+        <service android:name="com.kmnfsw.work.sign.service.SignTaskPointService" />
+        <service android:name="com.kmnfsw.work.sign.service.SignInitPointService" />
+        <service android:name="com.kmnfsw.work.sign.service.SignTaskContentService" />
+        
+        <!-- 退出服务 -->
+        <service android:name="com.kmnfsw.work.help.service.HelpService" />
+        
+        <!-- 问题服务 -->
+        <service android:name="com.kmnfsw.work.question.service.QuestionService" />
+        
+        <!-- Rabbitmq监听器接受后台 -->
+        <service android:name="com.kmnfsw.work.backstage.RabbitmqListenService" />
+        
+        
+        <!-- 维修 -->
+        <service android:name="com.kmnfsw.work.repair.service.AppointDetailsService" />
+        <service android:name="com.kmnfsw.work.repair.service.AppointService" />
+        
+    </application>
+
+</manifest>

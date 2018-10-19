@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/bottom_tabs_press" >
+
+        <TextView
+            android:id="@+id/big_img_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="申请验收"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <RelativeLayout
+            android:id="@+id/big_imgv_leftbtn"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/sign_button_operate" >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/back" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/big_imgv_rightbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/sign_button_operate" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <!-- 内容 -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/sign_task_layout_color"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/sign_task_layout_color" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_dark"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <!-- 使用耗材 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border" >
+
+                <EditText
+                    android:id="@+id/appoint_apply_userMaterial"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border"
+                    android:editable="true"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="使用耗材。。。"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/sign_task_layout_color" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_dark"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <!-- 描述 -->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border" >
+
+                <EditText
+                    android:id="@+id/appoint_apply_depict"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@drawable/border"
+                    android:editable="true"
+                    android:ems="10"
+                    android:gravity="top"
+                    android:hint="描述内容。。。"
+                    android:textColor="#4D4D4D"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/sign_task_layout_color" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_dark"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <!-- 图片 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border" >
+
+                <com.kmnfsw.work.repair.view.AdaptationHightGridView
+                    android:id="@+id/img_gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:gravity="center"
+                    android:horizontalSpacing="10dp"
+                    android:numColumns="3"
+                    android:verticalSpacing="10dp" >
+                </com.kmnfsw.work.repair.view.AdaptationHightGridView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="@color/sign_task_layout_color" >
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_dark"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <!-- 语音 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text=" 语  音："
+                    android:textColor="#4D4D4D"
+                    android:textSize="20sp" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="140dp" >
+
+                    <com.kmnfsw.work.question.view.AudioRecorderButton
+                        android:id="@+id/record_btn"
+                        android:layout_width="90dp"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/btn_record_normal"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/str_recorder_normal"
+                        android:textColor="#4D4D4D" />
+
+                    <FrameLayout
+                        android:id="@+id/voice_btn"
+                        android:layout_width="90dp"
+                        android:layout_height="36dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/boder_bound"
+                        android:visibility="invisible" >
+
+                        <View
+                            android:id="@+id/id_recoder_anim"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/adj" />
+                    </FrameLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_dark"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+            <!-- 发送按钮 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@android:color/white" >
+                <Button
+		            android:id="@+id/appoint_send"
+		            android:layout_width="100dp"
+		            android:layout_height="40dp"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_marginRight="10dp"
+		            android:background="@drawable/btn_blue"
+		            android:text="发    送"
+		            android:textColor="@android:color/white" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/light_dark"
+                android:orientation="vertical" >
+            </LinearLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <EditText
+        android:id="@+id/name_edit"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/shap_edit_bg"
+        android:drawableLeft="@drawable/name_edit_tab"
+        android:drawablePadding="16dp"
+        android:hint="@string/name_hint"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:textColor="@android:color/white"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColorHint="#b7b7b7" />
+
+    <EditText
+        android:id="@+id/pwd_edit"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shap_edit_bg"
+        android:drawableLeft="@drawable/pwd_edit_tab"
+        android:drawablePadding="16dp"
+        android:hint="@string/pwd_hint"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="8dp"
+        android:password="true"
+        android:textColor="@android:color/white"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:nextFocusForward="@id/login_sure"
+        android:textColorHint="#b7b7b7" />
+
+    <RelativeLayout
+        android:id="@+id/login_bt_layout"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pwd_edit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp" >
+
+        <Button
+            android:id="@+id/login_sure"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login_selector"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/login_sure"
+            android:textColor="#b7b7b7"
+            android:imeOptions="actionDone"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/login_cancel"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/login_selector"
+            android:gravity="center"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp"
+            android:text="@string/cancel"
+            android:textColor="#b7b7b7"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/other_layout"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_bt_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/forget_pwd_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="@string/remenber_pwd"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <com.kmnfsw.work.welcomeLogin.view.SmoothCheckBox
+            android:id="@+id/remenber_pwd"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toLeftOf="@id/forget_pwd_text"
+            android:text="@string/remenber_pwd"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            app:color_checked="@color/colorAccent" />
+    </RelativeLayout>
+
+</RelativeLayout>

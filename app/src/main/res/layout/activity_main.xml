@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <FrameLayout
+        android:id="@+id/content_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs" >
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@id/tabs"
+        android:background="@color/light_dark"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!-- 手机总宽360dp -->
+
+    <LinearLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <!-- 问题 -->
+
+        <RelativeLayout
+            android:id="@+id/main_exception"
+            android:layout_width="72dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/exception_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/question_in_normal" />
+
+            <TextView
+                android:id="@+id/exception_text"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/exception_img"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/exception"
+                android:textColor="@color/bottom_tabs_normal"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <!-- 维修 -->
+
+        <RelativeLayout
+            android:id="@+id/main_repair"
+            android:layout_width="72dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/repair_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/repair_in_normal" />
+
+            <TextView
+                android:id="@+id/repair_text"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/repair_img"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/repair"
+                android:textColor="@color/bottom_tabs_normal"
+                android:textSize="13sp" />
+
+            <RelativeLayout
+                android:id="@+id/repair_receive_tag"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/repair_img"
+                android:background="@drawable/round_rim" >
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- 签到 -->
+
+        <RelativeLayout
+            android:id="@+id/main_sign"
+            android:layout_width="72dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/sign_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/sign_in_select" />
+
+            <TextView
+                android:id="@+id/sign_text"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/sign_img"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/sign"
+                android:textColor="@color/bottom_tabs_press"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <!-- 监测 -->
+
+        <RelativeLayout
+            android:id="@+id/main_monitor"
+            android:layout_width="72dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/monitor_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/monitor_in_normal" />
+
+            <TextView
+                android:id="@+id/monitor_text"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/monitor_img"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/monitor"
+                android:textColor="@color/bottom_tabs_normal"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <!-- 帮助 -->
+
+        <RelativeLayout
+            android:id="@+id/main_help"
+            android:layout_width="72dp"
+            android:layout_height="50dp" >
+
+            <ImageView
+                android:id="@+id/help_img"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6dp"
+                android:src="@drawable/help_in_normal" />
+
+            <TextView
+                android:id="@+id/help_text"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_below="@id/help_img"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:text="@string/help"
+                android:textColor="@color/bottom_tabs_normal"
+                android:textSize="13sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

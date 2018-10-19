@@ -1,0 +1,262 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\8d95b9871b7093c7e279639573c48465\AndroidManifest.xml:17:1-24:12
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:1-155:12
+	package
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:3:5-30
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:5:5-32
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:2:11-69
+	android:versionCode
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\8d95b9871b7093c7e279639573c48465\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\8d95b9871b7093c7e279639573c48465\AndroidManifest.xml:20:5-43
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:7:5-9:41
+INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+		INJECTED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:12:5-78
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:12:22-75
+uses-permission#android.permission.VIBRATE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:14:3-63
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:14:20-61
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:16:5-81
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.RECORD_AUDIO
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:19:5-71
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:19:22-68
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:22:5-80
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:22:22-77
+uses-permission#android.permission.INTERNET
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:24:5-67
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:24:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:26:5-81
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:26:22-78
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:28:5-88
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:28:22-85
+uses-permission#android.permission.READ_PHONE_STATE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:30:5-75
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:30:22-72
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:33:5-79
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:33:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:35:5-76
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:35:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:37:5-76
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:37:22-73
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:39:5-81
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:39:22-78
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:41:5-89
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:41:22-86
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:43:5-79
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:43:22-76
+uses-permission#android.permission.BLUETOOTH
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:45:5-68
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:45:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:46:5-74
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:46:22-71
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:48:2-64
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:48:19-62
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:50:5-79
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:50:22-76
+uses-permission#android.permission.READ_CONTACTS
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:52:5-72
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:52:22-69
+application
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:56:5-153:19
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\8d95b9871b7093c7e279639573c48465\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:22.2.1] C:\Users\Administrator\.gradle\caches\transforms-1\files-1.1\support-v4-22.2.1.aar\8d95b9871b7093c7e279639573c48465\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:59:9-41
+	android:icon
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:58:9-45
+	android:allowBackup
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:57:9-35
+	android:theme
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:60:9-40
+meta-data#com.amap.api.v2.apikey
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:62:9-64:64
+	android:value
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:64:13-61
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:63:13-50
+activity#com.kmnfsw.work.MainActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:66:9-69:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:68:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:67:13-56
+activity#com.kmnfsw.work.welcomeLogin.WelcomeActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:71:9-80:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:74:13-49
+	android:label
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:73:13-45
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:72:13-72
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:75:13-79:29
+action#android.intent.action.MAIN
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:76:17-69
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:76:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:78:17-77
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:78:27-74
+activity#com.kmnfsw.work.version.SplashActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:81:9-84:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:83:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:82:13-66
+activity#com.kmnfsw.work.welcomeLogin.LoginActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:85:9-88:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:87:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:86:13-70
+activity#com.kmnfsw.work.sign.SignTaskActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:89:9-92:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:91:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:90:13-65
+activity#com.kmnfsw.work.question.QuestionShowBigImgActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:93:9-96:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:95:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:94:13-79
+activity#com.amap.api.navi.AmapRouteActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:98:9-100:79
+	android:configChanges
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:100:15-76
+	android:theme
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:99:15-62
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:98:19-69
+activity#com.kmnfsw.work.repair.ShowBigImgActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:101:9-104:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:103:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:102:13-69
+activity#com.kmnfsw.work.repair.AppointApplyActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:105:9-108:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:107:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:106:13-71
+activity#com.kmnfsw.work.repair.AppointDetailsActivity
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:109:9-112:20
+	android:screenOrientation
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:111:13-49
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:110:13-73
+service#com.amap.api.location.APSService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:127:9-103
+	android:launchMode
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:127:66-101
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:127:18-65
+service#com.kmnfsw.work.backstage.LocalhostReportService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:128:9-84
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:128:18-81
+service#com.kmnfsw.work.welcomeLogin.service.LoginService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:131:9-85
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:131:18-82
+service#com.kmnfsw.work.sign.service.SignTaskService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:134:9-80
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:134:18-77
+service#com.kmnfsw.work.sign.service.SignTaskPointService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:135:9-85
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:135:18-82
+service#com.kmnfsw.work.sign.service.SignInitPointService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:136:9-85
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:136:18-82
+service#com.kmnfsw.work.sign.service.SignTaskContentService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:137:9-87
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:137:18-84
+service#com.kmnfsw.work.help.service.HelpService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:140:9-76
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:140:18-73
+service#com.kmnfsw.work.question.service.QuestionService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:143:9-84
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:143:18-81
+service#com.kmnfsw.work.backstage.RabbitmqListenService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:146:9-83
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:146:18-80
+service#com.kmnfsw.work.repair.service.AppointDetailsService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:150:9-88
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:150:18-85
+service#com.kmnfsw.work.repair.service.AppointService
+ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:151:9-81
+	android:name
+		ADDED from D:\AndroidWorkSpace\EmployeeWork\app\src\main\AndroidManifest.xml:151:18-78

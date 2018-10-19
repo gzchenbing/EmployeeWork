@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr format="color" name="reachedColor"/>
+    <attr format="color" name="unreachedColor"/>
+    <color name="black">#ff000000</color>
+    <color name="bottom_tab">#E9E9E9</color>
+    <color name="bottom_tabs_normal">#999999</color>
+    <color name="bottom_tabs_press">#1296db</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="dark">#666666</color>
+    <color name="dark_red">#ff1493</color>
+    <color name="light_dark">#d0d0d0</color>
+    <color name="repair_appoint_red">#F22723</color>
+    <color name="repair_roll_tile">#E5E5E5</color>
+    <color name="sign_task_Relative_color">#FEFEFF</color>
+    <color name="sign_task_layout_color">#EBEBEB</color>
+    <color name="transparent">#a0000000</color>
+    <color name="white">#ffffffff</color>
+    <declare-styleable name="IntensifyImageView"><attr format="enum" name="scaleType">
+            <enum name="fitAuto" value="1"/>
+            <enum name="fitCenter" value="2"/>
+        </attr><attr format="boolean" name="animateScaleType"/><attr format="float" name="maximumScale"/><attr format="float" name="minimumScale"/><attr format="float" name="scale"/></declare-styleable>
+    <declare-styleable name="SimpleProgressbar"><attr name="reachedColor"/><attr name="unreachedColor"/></declare-styleable>
+    <declare-styleable name="SmoothCheckBox"><attr format="integer" name="duration"/><attr format="dimension" name="stroke_width"/><attr format="color" name="color_tick"/><attr format="color" name="color_checked"/><attr format="color" name="color_unchecked"/><attr format="color" name="color_unchecked_stroke"/></declare-styleable>
+    <declare-styleable name="monindicator"><attr format="dimension" name="circleRadius"/><attr format="dimension" name="circleSpacing"/><attr format="integer" name="cycle"/></declare-styleable>
+    <string name="already_sign">已经签到</string>
+    <string name="app_name">工作平台</string>
+    <string name="cancel">取		消</string>
+    <string name="exception">问题</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="help">帮助</string>
+    <string name="help_title_str">帮 助</string>
+    <string name="loading_text">正在登录</string>
+    <string name="login_sure">登		录</string>
+    <string name="monitor">监测</string>
+    <string name="monitor_title_str">监 测</string>
+    <string name="name_hint">用户名</string>
+    <string name="oneself_appoint_str">自行指派任务</string>
+    <string name="other_appoint_str">他人指派任务</string>
+    <string name="pwd_hint">密 	   码</string>
+    <string name="question_title_str">问 题</string>
+    <string name="remenber_pwd">是否记住密码?</string>
+    <string name="repair">维修</string>
+    <string name="repair_title_str">维 修</string>
+    <string name="sign">巡检</string>
+    <string name="sign_task_str">任务</string>
+    <string name="sign_title_str">巡 检</string>
+    <string name="str_recorder_normal">按住说话</string>
+    <string name="sure_sign">确认签到</string>
+    <string name="version_text">版本号:1.0</string>
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="AudioDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="CustomDialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">false</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/dialog_custom_bg</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">true</item><!--背景模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="morestyle" parent="android:Animation">  
+        <item name="@android:windowEnterAnimation">@anim/head_right_in</item>  <!-- 进入时的动画 -->  
+        <item name="@android:windowExitAnimation">@anim/head_right_out</item>     <!--退出时的动画  -->  
+    </style>
+    <style name="zero_widthwrapcontent">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+</resources>

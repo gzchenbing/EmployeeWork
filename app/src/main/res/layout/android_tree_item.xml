@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/id_treenode_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/tree_off" />
+
+    <!-- 保证整块区域可点，使用户好点击 -->
+
+    <TextView
+        android:id="@+id/id_treenode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/id_treenode_icon"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:text="加载中..."
+        android:textColor="#4D4D4D"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:id="@+id/id_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择"
+            android:textColor="#1296DB"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
